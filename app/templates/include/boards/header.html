@@ -1,0 +1,33 @@
+{% block header %}
+
+<header class="wz-header">
+    <div class="header-wrap">
+        <div class="home-logo ml-3">
+            <a href="{% url 'index' %}">WEBAKER</a>
+        </div>
+        <ul style="list-style:none; display: inline-block;">
+            <li class="menu mr-2"><a href="">레시피</a></li>
+            <li class="menu mr-2"><a href="">재료</a></li>
+            <li class="menu mr-2"><a href="">파티시에</a></li>
+        </ul>
+
+        <ul class="layout-header">
+            {% if user.is_authenticated %}
+            <li>
+                <button type="submit" class="btn btn-success">로그아웃</button>
+            </li>
+            {% else %}
+            <li>
+                <button>로그인</button>
+
+            </li>
+            <li>
+                <button>로그아웃</button>
+
+            </li>
+            {% endif %}
+        </ul>
+    </div>
+
+</header>
+{% endblock %}

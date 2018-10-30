@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+"beautifulsoup4" = "*"
+lxml = "*"
+requests = "*"
+selenium = "*"
+djangorestframework = "*"
+
+[dev-packages]
+django-extensions = "*"
+jupyter = "*"
+
+[requires]
+python_version = "3.6"
