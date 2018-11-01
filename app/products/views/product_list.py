@@ -6,4 +6,4 @@ __all__ = (
 
 
 def product_list(request):
-    return render(request, 'index.html')
+    return render(request, 'products/product_list.html')
