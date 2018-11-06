@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from products.models import Product
 
 __all__ = (
     'product_list',
@@ -6,4 +7,11 @@ __all__ = (
 
 
 def product_list(request):
-    return render(request, 'products/product_list.html')
+
+    products = Product.objects.all()
+
+    context = {
+        'products': products
+    }
+
+    return render(request, 'products/product_list.html', context)

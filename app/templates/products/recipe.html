@@ -31,17 +31,6 @@
 
 </style>
 
-<h1>Product</h1>
-{% for product in products %}
-<div class="product-layout card col-md-3 ml-2 mr-2 mb-3">
+<h1>Recipe</h1>
 
-    <div class="img-layout"
-         style="background-image: url('https://goldcandy.co.kr/web/product/big/201508/229_shop1_880212.jpg');"></div>
-    <div class="card-body" style="padding: 0; padding-bottom: 20px;">
-        <h4 class="card-title title mt-2">{{product.product_name}}</h4>
-        <span class="card-subtitle mb-2 text-muted">{{product.product_type}}</span>
-    </div>
-
-</div>
-{% endfor %}
 {% endblock %}
