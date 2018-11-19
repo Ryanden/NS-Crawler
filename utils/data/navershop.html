@@ -1,0 +1,91 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" ng-app="center"><head><style type="text/css">[uib-typeahead-popup].dropdown-menu{display:block;}</style><style type="text/css">.uib-time input{width:50px;}</style><style type="text/css">[uib-tooltip-popup].tooltip.top-left &gt; .tooltip-arrow,[uib-tooltip-popup].tooltip.top-right &gt; .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-left &gt; .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-right &gt; .tooltip-arrow,[uib-tooltip-popup].tooltip.left-top &gt; .tooltip-arrow,[uib-tooltip-popup].tooltip.left-bottom &gt; .tooltip-arrow,[uib-tooltip-popup].tooltip.right-top &gt; .tooltip-arrow,[uib-tooltip-popup].tooltip.right-bottom &gt; .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-left &gt; .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-right &gt; .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-left &gt; .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-right &gt; .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-top &gt; .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-bottom &gt; .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-top &gt; .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-bottom &gt; .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-left &gt; .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-right &gt; .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-left &gt; .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-right &gt; .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-top &gt; .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-bottom &gt; .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-top &gt; .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-bottom &gt; .tooltip-arrow,[uib-popover-popup].popover.top-left &gt; .arrow,[uib-popover-popup].popover.top-right &gt; .arrow,[uib-popover-popup].popover.bottom-left &gt; .arrow,[uib-popover-popup].popover.bottom-right &gt; .arrow,[uib-popover-popup].popover.left-top &gt; .arrow,[uib-popover-popup].popover.left-bottom &gt; .arrow,[uib-popover-popup].popover.right-top &gt; .arrow,[uib-popover-popup].popover.right-bottom &gt; .arrow,[uib-popover-html-popup].popover.top-left &gt; .arrow,[uib-popover-html-popup].popover.top-right &gt; .arrow,[uib-popover-html-popup].popover.bottom-left &gt; .arrow,[uib-popover-html-popup].popover.bottom-right &gt; .arrow,[uib-popover-html-popup].popover.left-top &gt; .arrow,[uib-popover-html-popup].popover.left-bottom &gt; .arrow,[uib-popover-html-popup].popover.right-top &gt; .arrow,[uib-popover-html-popup].popover.right-bottom &gt; .arrow,[uib-popover-template-popup].popover.top-left &gt; .arrow,[uib-popover-template-popup].popover.top-right &gt; .arrow,[uib-popover-template-popup].popover.bottom-left &gt; .arrow,[uib-popover-template-popup].popover.bottom-right &gt; .arrow,[uib-popover-template-popup].popover.left-top &gt; .arrow,[uib-popover-template-popup].popover.left-bottom &gt; .arrow,[uib-popover-template-popup].popover.right-top &gt; .arrow,[uib-popover-template-popup].popover.right-bottom &gt; .arrow{top:auto;bottom:auto;left:auto;right:auto;margin:0;}[uib-popover-popup].popover,[uib-popover-html-popup].popover,[uib-popover-template-popup].popover{display:block !important;}</style><style type="text/css">.uib-datepicker-popup.dropdown-menu{display:block;float:none;margin:0;}.uib-button-bar{padding:10px 9px 2px;}</style><style type="text/css">.uib-position-measure{display:block !important;visibility:hidden !important;position:absolute !important;top:-9999px !important;left:-9999px !important;}.uib-position-scrollbar-measure{position:absolute !important;top:-9999px !important;width:50px !important;height:50px !important;overflow:scroll !important;}.uib-position-body-scrollbar-measure{overflow:scroll !important;}</style><style type="text/css">.uib-datepicker .uib-title{width:100%;}.uib-day button,.uib-month button,.uib-year button{min-width:100%;}.uib-left,.uib-right{width:100%}</style><style type="text/css">.ng-animate.item:not(.left):not(.right){-webkit-transition:0s ease-in-out left;transition:0s ease-in-out left}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>네이버 스마트스토어센터</title>
+	<!-- For old IEs -->
+	<link rel="shortcut icon" type="image/x-icon" href="/images/icon/favicon_16x16.ico" />
+	<!-- For new browsers - multisize ico  -->
+	<link rel="icon" type="image/x-icon" sizes="16x16" href="/images/icon/favicon_16x16.ico" />
+	<link rel="icon" type="image/x-icon" sizes="32x32" href="/images/icon/favicon_32x32.ico" />
+
+	<!-- for Android Chrome -->
+	<link rel="icon" sizes="192x192" href="/images/icon/favicon-192-20180619.png" />
+	<!-- for iPhone 6 Plus; other device will scale it down as needed -->
+	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/images/icon/favicon-180-20180619.png" />
+    <!-- pacejs http://github.hubspot.com/pace/ -->
+    <link href="./pace.css" rel="stylesheet" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script type="text/javascript" src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/maps3.js"></script>
+    
+    <link href="./app.css?227286837e20ee2b4e95" rel="stylesheet" />
+    
+
+</head>
+<!--<script type="text/javascript">
+    window.name = "NG_DEFER_BOOTSTRAP!";
+</script>-->
+
+<body ncp-nclicks="" class="  pace-done"><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+<!-- loading -->
+<div class="seller-floating-wrap" id="__initial_loading" style="display: none;">
+    <div class="inner-wrap">
+        <div>
+            <img src="images/loading_gray.gif" alt="로딩중" />
+        </div>
+    </div>
+</div>
+<div class="seller-floating-wrap dimmed" id="__request_loading" style="display: none;">
+	<div class="inner-wrap">
+		<div>
+			<img src="images/loading_white.gif" alt="로딩중" />
+		</div>
+	</div>
+</div>
+<!-- //loading -->
+<!----><ui-view class="" style=""><ncp-chrome-recommend><!----></ncp-chrome-recommend><div ncp-help="" show-help="vm.showHelp" get-help-id="vm.getHelpId" class="show-help"><!----></div><div class="seller-join-wrap"><div class="seller-join-inner-wrap"><div class="seller-join-inner"><header class="seller-join-header"><h1 class="logo"><span class="sr-only">Naver</span></h1><h2 class="join-title">스마트스토어센터 로그인</h2><p class="info-text">스마트스토어센터에 등록한 판매자 <span class="text-primary">아이디</span>로 로그인해 주세요.<br />처음 방문하신 분은 <a href="/#/sellers/join" class="btn-link" data-nclicks-code="login.sellerjoinup">판매자 가입</a> 후, 이용해 주세요.</p></header><div class="seller-join-content"><form ng-submit="vm.login(vm.loginId, vm.password)" novalidate="" class="ng-pristine ng-invalid ng-invalid-required"><div class="panel panel-seller"><ul class="seller-tap-simple" role="tablist"><li role="tab" aria-selected="true"><a href="">판매자 아이디 로그인</a></li><li role="tab"><a href="https://nid.naver.com/nidlogin.login?url=https%3A%2F%2Fsell.smartstore.naver.com%2F%23%2FnaverLoginCallback%3Furl%3Dhttps%253A%252F%252Fsell.smartstore.naver.com%252F%2523%252Fnaverpay%252Fsale%252Fdelivery%252Fsituation" data-nclicks-code="login.nidlogin">네이버 아이디 로그인</a></li></ul><div class="panel-body"><div class="form-group"><div class="seller-input-wrap"><input type="text" id="loginId" class="form-control ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required" placeholder="아이디 또는 이메일 주소" title="아이디 또는 이메일 주소 입력" ng-keydown="vm.clearShowError($event)" autocorrect="off" autocapitalize="none" ng-model="vm.loginId" ncp-input-clear="" required="" /><a role="button" class="btn-clear" tabindex="-1" style="display:none;"><span aria-label="삭제">×</span></a></div></div><div class="form-group"><div class="seller-input-wrap"><input type="password" id="loginPassword" class="form-control ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required" placeholder="비밀번호" title="비밀번호 입력" ng-keydown="vm.clearShowError($event)" ng-model="vm.password" ncp-input-clear="" required="" /><a role="button" class="btn-clear" tabindex="-1" style="display:none;"><span aria-label="삭제">×</span></a></div></div><p class="sub-text text-danger ng-hide" ng-show="vm.showError"><i class="seller-icon icon-slash-circle" aria-hidden="true"></i> 판매회원으로 등록되지 않거나 잘못된 아이디 또는 비밀번호를 입력하셨습니다.</p><!----></div></div><div class="seller-btn-area btn-group-xlg"><button type="submit" id="loginButton" class="btn btn-primary btn-block">로그인</button></div></form><div class="info-nonmember-login" ng-style="{'margin-bottom': 18}" style="margin-bottom: 18px;"><p class="btn-group has-bar"><a href="/#/sellers/join" class="btn-link" data-nclicks-code="login.sellerjoinbottom">판매자 가입</a> <a href="/#/member/find/id" class="btn-link" data-nclicks-code="login.findid">아이디 찾기</a> <a href="/#/member/find/pw" class="btn-link" data-nclicks-code="login.findpw">비밀번호 찾기</a></p></div><div class="alert seller-alert seller-login-alert ng-hide" ng-show="vm.showError"><div class="text-center"><p class="title"><strong class="text-primary"><i class="fn-shopping fn-25 fn-shopping-caution1" aria-hidden="true"></i> 앗 로그인이 안되나요?</strong></p><p class="sub-text">기존 쇼핑윈도에서 네이버ID 로그인을 하셨던 경우,<br />스마트스토어센터에서도 로그인이 가능합니다.</p><p class="sub-text">헷갈리실 경우 도움말을 확인해주세요 [<a href="" ng-click="vm.showHelpPopup()" class="btn-link">도움말 가기</a>]</p></div></div></div><footer class="seller-footer hidden-xs" role="contentinfo"><div class="inner-footer"><address><p><a href="https://www.naver.com" class="logo" target="_blank" title="새창"><span class="sr-only">NAVER</span></a></p>Copyright © <a href="http://www.navercorp.com/ko/index.nhn" class="copy-navercorp" target="_blank" title="새창"><strong>NAVER Corp.</strong></a> All rights reserved.</address></div></footer><footer class="seller-footer visible-xs" role="contentinfo"><div class="inner-footer-m"><div class="section-provision"><address><a href="http://www.navercorp.com/ko/index.nhn" target="_blank" title="새창">© NAVER Corp.</a></address></div></div></footer></div></div></div></ui-view>
+<!----><ui-view name="work"></ui-view>
+
+<script type="text/javascript" src="./vendors.js?227286837e20ee2b4e95"></script>
+
+<script type="text/javascript" src="./app.js?227286837e20ee2b4e95"></script>
+
+<script type="text/javascript">
+    window.onload = function() {
+        var loading = document.getElementById("__initial_loading");
+        loading.style.display = "none";
+    }
+</script>
+<script type="text/javascript">
+    window.paceOptions = {
+        restartOnRequestAfter: true,
+        ajax: {
+            trackWebSockets: false,
+            ignoreURLs: ['socket.io', 'asyncdownload/health'],
+            trackMethods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH']
+        }
+    }
+</script>
+<script type="text/javascript" src="./pace.min.js"></script>
+
+<!--
+<script type="text/javascript">
+    $(document).ready(function() {
+        $.when($.ajax("/api/context")).then(function(data) {
+            angular.module("center").constant("userContext", data);
+            angular.resumeBootstrap();
+        });
+    });
+</script>
+-->
+
+
+</body></html>
