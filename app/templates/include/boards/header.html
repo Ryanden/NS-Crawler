@@ -1,33 +1,72 @@
 {% block header %}
+<style>
+    ul {
+        list-style:none;
+        padding: 0;
+    }
 
-<header class="wz-header">
-    <div class="header-wrap">
-        <div class="home-logo ml-3">
-            <a href="{% url 'index' %}">WEBAKER</a>
-        </div>
-        <ul style="list-style:none; display: inline-block;">
-            <li class="menu mr-2"><a href="{% url 'product:product-list' %}">레시피</a></li>
-            <li class="menu mr-2"><a href="naver.com">재료</a></li>
-            <li class="menu mr-2"><a href="">파티시에</a></li>
-        </ul>
+    .home-logo {
+        width: 100px;
+        margin: 0 auto;
+    }
 
-        <ul class="layout-header">
-            {% if user.is_authenticated %}
-            <li>
-                <button type="submit" class="btn btn-success">로그아웃</button>
-            </li>
-            {% else %}
-            <li>
-                <button>로그인</button>
 
-            </li>
-            <li>
-                <button>로그아웃</button>
+    .header-wrap {
+        width: 1200px;
+        height: 200px;
+        margin: 0 auto;
+    }
 
-            </li>
-            {% endif %}
+    .wb-main-menu {
+
+        float: left;
+        font-size: 25px;
+    }
+
+    .wb-login-header {
+        float: right;
+    }
+
+    .wb-login {
+        float: left;
+    }
+
+</style>
+
+
+<div class="header-wrap">
+    <div class="home-logo">
+
+        <a href="{% url 'index' %}">
+            <img src="https://media.rocketpunch.com/cache/70/c7/70c7221a5b8b8a5ad417d13ed3f4dc22.jpg" alt="">
+        </a>
+    </div>
+
+
+    <div class="wb-main-menu-wrap">
+        <ul>
+            <li class="wb-main-menu mr-4"><a href="{% url 'product:product-list' %}">베이킹재료</a></li>
+            <li class="wb-main-menu mr-4"><a href="{% url 'product:recipe' %}">레시피</a></li>
+            <li class="wb-main-menu mr-4"><a href="">파티시에</a></li>
         </ul>
     </div>
 
-</header>
+    <div class="wb-login-header">
+        <ul>
+        {% if user.is_authenticated %}
+            <li class="wb-login">
+                <button type="submit" class="btn btn-success">로그아웃</button>
+            </li>
+            {% else %}
+            <li class="wb-login mr-2">
+                <button class="btn btn-success">로그인</button>
+            </li>
+            <li class="wb-login mr-2">
+                <button class="btn btn-success">회원가입</button>
+            </li>
+        {% endif %}
+        </ul>
+    </div>
+</div>
+
 {% endblock %}

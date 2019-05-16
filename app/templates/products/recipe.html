@@ -1,0 +1,36 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<style>
+    .title {
+        max-height: 48px;
+        line-height: 24px;
+        font-size: 17px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .product-layout {
+
+        padding-top:150px;
+        float:left;
+        width: 230px;
+        position:relative;
+        margin-right: 10px;
+    }
+
+    .img-layout {
+        height:150px;
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        background-size: cover;
+        margin-right: 20px;
+        width: 230px;
+    }
+
+</style>
+
+<h1>Recipe</h1>
+
+{% endblock %}

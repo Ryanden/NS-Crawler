@@ -1,9 +1,72 @@
 {% extends 'index.html' %}
 
 {% block content %}
+<style>
 
-    <h1>
+    .container {
+        max-width: 1200px;
+    }
 
-        큰글자압니다~!
-    </h1>
+    .product-title-container {
+        width: 1200px;
+    }
+
+    .product-title {
+        width: 75px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .title {
+        max-height: 48px;
+        line-height: 24px;
+        font-size: 17px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .product-layout {
+
+        padding-top:150px;
+        float:left;
+        width: 230px;
+        position:relative;
+        margin: 0 auto;
+    }
+
+    .img-layout {
+        height:150px;
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        background-size: cover;
+        margin-right: 20px;
+    }
+
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color:#000;
+  margin: 0;
+  padding: 0;
+}
+
+</style>
+<div class="product-title-container">
+    <h1 class="product-title">제품</h1>
+</div>
+{% for product in products %}
+
+<div class="product-layout card col-6 col-md-3 mb-2">
+
+    <div class="img-layout"
+         style="background-image: url('https://goldcandy.co.kr/web/product/big/201508/229_shop1_880212.jpg');"></div>
+    <div class="card-body" style="padding: 0; padding-bottom: 20px;">
+        <h4 class="card-title title mt-2">{{product.product_name}}</h4>
+        <span class="card-subtitle mb-2 text-muted">{{product.product_type}}</span>
+        <p>가격: 3,000원</p>
+    </div>
+
+</div>
+{% endfor %}
 {% endblock %}
